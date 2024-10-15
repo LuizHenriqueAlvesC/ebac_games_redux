@@ -9,7 +9,7 @@ describe('Testes para o componente header', () => {
     expect(screen.getByText('EBAC Games')).toBeInTheDocument()
   })
 
-  test('Deve renderizar com 2 itens no carrinho', () => {
+  test('Deve redenrizar com 2 itens no carrinho', () => {
     renderizaComProvider(<Header />, {
       preloadedState: {
         carrinho: {
@@ -28,8 +28,8 @@ describe('Testes para o componente header', () => {
               categoria: 'RPG',
               imagem: '',
               plataformas: ['Windows', 'PS5', 'Xbox Series S/X'],
-              preco: 199.9,
-              precoAntigo: 299.9,
+              preco: 150.9,
+              precoAntigo: 199.9,
               titulo: 'Hogwarts Legacy'
             }
           ]
